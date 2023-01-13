@@ -1,0 +1,15 @@
+1.代码需要Node环境安装，用来运行js文件代码
+    需要运行：npm install 或者 npm install -g
+    前一个需要到项目当前路径下cmd运行，后一个是全局安装
+2.需要安装各种库
+    例如：
+    execjs - pip install PyExecJS  #运行js文件
+    emoji  - pip install emoji     #将内容中表情，转换成utf-8格式，让Mysql可识别
+3.需要在mysql的shell里输入以下命令，防止爬取的内容过多，数据溢出报错( PS：MySQL重启后失效)
+    SET @@global.sql_mode='';
+4.文件说明
+    host_news.py             #爬取热点新闻
+    热门视频.py                #爬取热门视频
+    toutiao.js                    #获取_signature参数
+   
+
